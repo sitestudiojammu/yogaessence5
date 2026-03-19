@@ -666,6 +666,36 @@
       box-shadow: 0 15px 30px rgba(0,0,0,0.6);
     }
 
+    /* Floating WhatsApp icon (new) */
+    .floating-wa {
+      position: fixed;
+      bottom: 100px;   /* above the fixed book button on desktop */
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 2.4rem;
+      line-height: 60px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      z-index: 101;    /* above the fixed button */
+      transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .floating-wa:hover {
+      background-color: #128C7E;
+      transform: scale(1.1);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    }
+    .floating-wa i {
+      font-size: 2.2rem;
+    }
+
     /* modals */
     .modal {
       display: none;
@@ -851,6 +881,18 @@
         bottom: 15px;
       }
 
+      .floating-wa {
+        bottom: 90px;   /* above fixed button on mobile */
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 2rem;
+      }
+      .floating-wa i {
+        font-size: 1.8rem;
+      }
+
       .footer-inner {
         flex-direction: column;
         text-align: center;
@@ -896,6 +938,14 @@
       }
       .cert-grid {
         grid-template-columns: 1fr 1fr;
+      }
+      .floating-wa {
+        bottom: 80px;
+        right: 10px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 1.8rem;
       }
     }
 
@@ -1156,6 +1206,11 @@
 
   <!-- Fixed Book Free Session button (center) -->
   <a href="#" class="fixed-book-btn" id="fixedBookBtn"><i class="fas fa-calendar-alt"></i> Book Free Session</a>
+
+  <!-- Floating WhatsApp Icon (new) -->
+  <a href="https://wa.me/917006647404?text=Hi%20Palvi%2C%20I'm%20interested%20in%20yoga%20classes" class="floating-wa" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <!-- Modal for Subscribe Now (membership) -->
   <div class="modal" id="subscribeModal">
