@@ -201,6 +201,17 @@
       text-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
 
+    /* ---- small trishul icon next to logo ---- */
+    .trishul-icon {
+      font-size: 0.75em;        /* smaller than main text */
+      margin-left: 6px;
+      vertical-align: middle;
+      display: inline-block;
+      transform: translateY(-2px); /* fine align */
+      filter: drop-shadow(0 2px 2px rgba(0,0,0,0.3));
+      opacity: 0.9;
+    }
+
     .nav-links {
       display: flex;
       gap: 2rem;
@@ -1056,7 +1067,8 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo"><a href="#home">Palvi Gulati</a></div>
+      <!-- Logo with small trishul icon added -->
+      <div class="logo"><a href="#home">Palvi Gulati <span class="trishul-icon">🔱</span></a></div>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
       <nav class="nav-links" id="mainNav">
         <a href="#home">Home</a>
