@@ -541,7 +541,7 @@
 
     .reviews-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
       margin-top: 2rem;
       width: 100%;
@@ -571,6 +571,7 @@
       font-style: italic;
       margin-bottom: 1.5rem;
       color: #ecd9c0;
+      line-height: 1.5;
     }
 
     .review-author {
@@ -580,9 +581,9 @@
       font-size: 1.2rem;
     }
 
+    /* location div removed – no city names displayed */
     .review-location {
-      font-size: 0.9rem;
-      color: #b7a792;
+      display: none;
     }
 
     .meet-grid {
@@ -1032,7 +1033,47 @@
     </div></div></section>
     <section class="section" style="background-color: var(--dark-brown-shade);" data-aos="fade-up"><div class="container text-center"><h2 style="text-align: center;">Kids Yoga Summer Camp</h2><p class="lead" style="max-width: 600px; margin: 0 auto 1.5rem;">Fun, engaging, and mindful yoga for children aged 5–12. Build strength, flexibility, and creativity in a playful environment.</p><div class="image-card" style="max-width: 550px; margin: 2rem auto;" data-aos="zoom-in"><img src="https://i.ibb.co/Mk3mkcP9/IMG-20260325-142026.jpg" alt="Kids Yoga Summer Camp at Palvi Gulati studio - joyful group session"></div><a href="#" class="btn btn-primary" id="campBtn">Check Availability</a></div></section>
     <section class="section" style="background-color: var(--medium-brown);" data-aos="fade-up"><div class="container"><div style="max-width: 650px; margin: 0 auto;"><h2 style="text-align: center;">Monthly Membership</h2><div class="pricing-card" style="text-align: center;" data-aos="flip-left"><div class="title" style="font-size: 1.8rem; color: #f0dbc0;">Offline & Online Classes</div><div class="price" style="font-size: 3rem; font-weight: 500; margin: 1rem 0 0.3rem;">₹3,500.00 <small style="font-size: 1rem; font-weight: 300; color: #dbbca0;">INR</small></div><div class="period" style="color: #dbbca0; margin-bottom: 1rem;">Every month</div><p style="color:#bfaa92; margin-bottom: 2rem;">Access to all weekly offline & online classes with Palvi</p><ul class="benefits" style="list-style: none; margin: 2rem 0; text-align: left; display: inline-block;"><li style="padding: 0.7rem 0; border-bottom: 1px solid var(--warm-tan); display: flex; gap: 0.5rem;"><i class="fas fa-check" style="color: var(--warm-tan); width: 1.5rem;"></i> Weekly in‑studio sessions</li><li style="padding: 0.7rem 0; border-bottom: 1px solid var(--warm-tan); display: flex; gap: 0.5rem;"><i class="fas fa-check" style="color: var(--warm-tan); width: 1.5rem;"></i> Live online classes via Zoom</li><li style="padding: 0.7rem 0; border-bottom: 1px solid var(--warm-tan); display: flex; gap: 0.5rem;"><i class="fas fa-check" style="color: var(--warm-tan); width: 1.5rem;"></i> Flexible attendance – offline or online</li></ul><a href="#" class="btn btn-primary" id="subscribeBtn">Subscribe Now</a></div></div></div></section>
-    <section class="section" style="background-color: var(--dark-brown-shade);" data-aos="fade-up"><div class="container text-center"><h2 style="text-align: center;">What our students say</h2><div class="reviews-grid"><div class="review-card"><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="review-text">"Palvi's classes have transformed my mornings. The perfect blend of strength and calm. So grateful to have her studio in Trikuta Nagar."</p><div class="review-author">— Riya Sharma</div><div class="review-location">Trikuta Nagar, Jammu</div></div><div class="review-card"><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="review-text">"After my pregnancy, I was looking for a safe practice. Palvi's postnatal classes helped me regain strength gently. Highly recommend!"</p><div class="review-author">— Ankita Verma</div><div class="review-location">Gandhinagar, Jammu</div></div><div class="review-card"><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="review-text">"I love the flexibility of offline and online options. Palvi creates a welcoming space for everyone. My stress levels have dropped so much."</p><div class="review-author">— Neha Gupta</div><div class="review-location">Jammu City</div></div></div></div></section>
+    
+    <!-- REVIEWS SECTION: City names removed (no location text) -->
+    <section class="section" style="background-color: var(--dark-brown-shade);" data-aos="fade-up">
+      <div class="container text-center">
+        <h2 style="text-align: center;">What our students say</h2>
+        <div class="reviews-grid">
+          <!-- Review 1: Shivani Gupta -->
+          <div class="review-card">
+            <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="review-text">"I genuinely feel so grateful to have found Palvi as my yoga teacher. She is truly one of the best yoga teachers in Jammu, not just for her knowledge and skill, but for the care and attention she brings to every session. What sets her apart is how she tailors each practice to individual needs, especially when it comes to working through health concerns."</p>
+            <div class="review-author">— Shivani Gupta</div>
+            <!-- location div omitted intentionally -->
+          </div>
+          <!-- Review 2: Swati Bushan -->
+          <div class="review-card">
+            <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="review-text">"If you’re in your 30s (or any age) and thinking of beginning your yoga journey, I cannot recommend her enough. She will hold space for your transformation with such love and wisdom that you’ll walk away not only stronger and more flexible, but also a little more whole."</p>
+            <div class="review-author">— Swati Bushan</div>
+          </div>
+          <!-- Review 3: Sandeep Rohmetra -->
+          <div class="review-card">
+            <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="review-text">"Heartiest congratulations on your website launch, Palavi! 🎉 It’s truly inspiring to see how much you’ve evolved and upgraded yourself over time. Your dedication to learning especially the way you’ve gone all the way to the South to deepen your knowledge and refine your skills speaks volumes about your commitment to yoga and self-growth."</p>
+            <div class="review-author">— Sandeep Rohmetra</div>
+          </div>
+          <!-- Review 4: Sharma Pooja -->
+          <div class="review-card">
+            <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="review-text">"Have been with Palvi since many years, and she has a deep understanding of the human body and guides the class according to each person's needs and before you know it, you are in a better space with your own body and it's improving abilities. Highly recommended."</p>
+            <div class="review-author">— Sharma Pooja</div>
+          </div>
+          <!-- Review 5: Prateek Gandotra -->
+          <div class="review-card">
+            <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="review-text">"I joined these yoga classes about a week ago and my experience has been very positive so far. The environment is calm, disciplined, and perfect for focusing on both physical and mental well-being. Highly recommended for anyone looking to improve their health and mindfulness."</p>
+            <div class="review-author">— Prateek Gandotra</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section class="section" style="background-color: var(--medium-brown);" id="about" data-aos="fade-up"><div class="container meet-grid"><div class="meet-image" data-aos="fade-right"><img src="https://i.ibb.co/BVKQSXWy/IMG-20260325-WA0004.jpg" alt="Palvi Gulati - certified yoga teacher in Trikuta Nagar Jammu"></div><div class="meet-bio" data-aos="fade-left"><h3>Meet Palvi Gulati</h3><div class="badge">E-RYT 500 · 8+ years · Ashtanga, Prenatal & Postnatal specialist</div><p>I am Palvi Gulati, a certified Ashtanga, prenatal, and postnatal yoga teacher based in Jammu. I have been running my own yoga studio for the past eight years, helping people improve their physical health, mental well-being, and overall lifestyle through yoga. I specialize in supporting women during pregnancy and postnatal recovery with safe and effective practices, while also guiding students of all levels to build strength, flexibility, and mindfulness in their daily lives. 🧘‍♀️🌿</p><p class="signature">"Yoga is for every body and every age — come as you are."</p></div></div></section>
     <section class="section" style="background-color: var(--dark-brown-shade);" data-aos="fade-up"><div class="container text-center"><h2 style="text-align: center;">Certifications</h2><div class="cert-grid"><div class="cert-item"><img src="https://i.ibb.co/Z6vq7wDn/IMG-20260317-133424.jpg" alt="Yoga certification Ashtanga training Palvi Gulati"></div><div class="cert-item"><img src="https://i.ibb.co/Ldm3vC14/IMG-20260317-141447.jpg" alt="Prenatal yoga certificate Palvi Gulati"></div><div class="cert-item"><img src="https://i.ibb.co/1GjTdH0F/IMG-20260317-141428.jpg" alt="Postnatal yoga teacher training certificate"></div><div class="cert-item"><img src="https://i.ibb.co/4w5N7DKh/IMG-6222.avif" alt="Kids yoga certification Palvi Gulati Jammu"></div></div></div></section>
     <section class="section" style="background-color: var(--medium-brown); padding-top: 2rem;" data-aos="fade-up"><div class="container free-session"><h3>Your first session is completely free</h3><p>In‑studio at Trikuta Nagar or online. No commitment.</p><a href="#" class="btn btn-primary" id="freeBookNowBtn">Book Now</a></div></section>
